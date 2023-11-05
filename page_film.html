@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+        <meta charset="utf-8" />
+        <title>Les Films de Plein Air</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body>
+        <header>
+            <div id="placement_entete">
+                <div id="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo"/></a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="page_films.html">Films</a></li>
+                        <li><a href="index.html#preinscription">Préinscription</a></li>
+                    </ul>
+                </nav>   
+            </div>
+        </header>
+
+        <div class="mise_en_page">
+            <div id="section_haut">
+                <p id="banniere_image"><img src="images/banniere.jpg" alt="Photographie"/></p>
+                <h1><img src="images/icone_presentation.png" alt="icone" class="ico_categorie"/>Présentation du festival</h1>
+                <p id="presentation">Cras rutrum molestie finibus. Sed iaculis sed justo quis accumsan. Morbi non leo nunc. Pellentesque gravida ultricies efficitur. Morbi sit amet tincidunt massa. Nam malesuada odio vel ligula suscipit, sed tempus tellus aliquam. Pellentesque a porta neque. Maecenas suscipit lobortis elit, ac feugiat elit euismod ut. Cras egestas, dui ultrices posuere gravida, metus metus dictum nibh, at sodales est magna vel urna. Quisque ultrices non neque sit amet consequat.</p>
+            </div>
+
+            <section>
+                <div id="section_principale">
+                    <div id="bloc_film">
+                        <h1 id="titre_film"><img src="images/icone_film.png" alt="Affiche de film" class="ico_categorie"/>Lorem Ipsum</h1>
+                        <article>
+                            <p id="reduction_affiche" class="miniature_affiche"><img src="images/film1.jpg" alt="Affiche miniature"/></a></p>
+                            <div class="position_article">
+                                <p>Date de sortie <strong>14 septembre 1994 </strong>(1h 43min)<br/>
+                                De <strong>Luc Besson</strong><br/>
+                                Avec <strong>Jean Reno, Gary Oldman, Natalie Portman</strong><br/>
+                                Genre <strong>Policier, Drame, Thriller, Action</strong><br/>
+                                Nationalité <strong>Français</strong></p>
+                                <em>Synopsis</em>
+                                <p>Integer consectetur nibh maximus purus vulputate, in mollis nisl condimentum. Nullam et elit sit amet erat sodales fermentum. Nunc vitae neque a purus pharetra elementum id vitae justo. Suspendisse posuere, ipsum eget tristique bibendum, leo lacus sagittis dui, vel tincidunt lectus risus vel mi. Sed odio tellus, pellentesque vitae egestas eget, pharetra in urna.</p>
+                                <a href="index.html">Retour</a>
+                            </div>
+                        </article>
+                    </div>
+                
+                    <div id="zone_formulaire">
+                        <div id="preinscription">
+                            <h1 id="titre_preinscription"><img src="images/icone_preinscription.png" alt="icone" class="ico_categorie"/>Pré-inscription</h1>
+                            <form method="post" action="traitement.php">
+                                <label for="film">Choisissez votre séance</label>
+                                <select name="film" id="film">
+                                    <optgroup label="Dimanche 5 août">
+                                        <option value="lorem">Lorem ipsum - 18h</option>
+                                        <option value="dolor">Dolor sit - 19h40</option>
+                                        <option value="gravida">Gravida nec - 21h10</option>
+                                    </optgroup>
+                                    <optgroup label="Lundi 6 août">
+                                        <option value="sed">Sed ornare - 18h</option>
+                                        <option value="vitae">Vitae interdum - 20h</option>
+                                        <option value="fringilla">Fringilla urna - 22h</option>
+                                    </optgroup>
+                                    <optgroup label="Mardi 7 août">
+                                        <option value="augue">Augue vitae - 18h</option>
+                                        <option value="luctus">Luctus iaculis - 19h30</option>
+                                        <option value="tellus">Tellus felis - 21h30</option>
+                                    </optgroup>
+                                    <optgroup label="Mercredi 8 août">
+                                        <option value="varius">Varius urna</option>
+                                        <option value="lectus">Id lectus</option>
+                                        <option value="curabitur">Curabitur id</option>
+                                    </optgroup>
+                                </select><br/>
+                                <label for="spectateurs">Nombre de personne</label>
+                                <input type="number" min="1" name="spectateurs" id="spectateurs"/><br/>
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" id="nom"/><br/>
+                                <label for="prenom">Prénom</label>
+                                <input type="text" name="prenom" id="prenom"/><br/>
+                                <input type="submit" id="envoi_formulaire" value="Valider"/>
+                            </form>
+                        </div>
+
+                        <div id="contact">
+                            <h1 id="titre_contact"><img src="images/icone_contact.png" alt="icone" class="ico_categorie"/>Contact</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor pellentesque ornare. In id mauris id diam volutpat hendrerit. Maecenas non est eu justo ornare maximus.</p>
+                            <form method="post" action="traitement.php">
+                                <label for="contact_nom">Nom</label>
+                                <input type="text" name="contact_nom" id="contact_nom"><br/>
+                                <label for="contact_prenom">Prénom</label>
+                                <input type="text" name="contact_prenom" id="contact_prenom"><br/>
+                                <label for="contact_email">E-mail</label>
+                                <input type="email" name="contact_email" id="contact_email"><br/>
+                                <label for="contact_tel">Téléphone</label>
+                                <input type="tel" name="contact_tel" id="contact_tel"><br/>
+                                <label for="contact_message">Message</label>
+                                <textarea name="contact_message" id="contact_message"></textarea><br/>
+                                <input type="submit" id="contact_envoi" value="Envoyer"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="partie_droite">
+                    <aside>
+                        <h1 id="titre_aside"><img src="images/icone_films.png" alt="icone" class="ico_categorie"/>FILM A L'AFFICHE</h1>
+                        <div id="bloc_affiche"> 
+                            <div class="affiche_film"><p class="alignement"><a href="page_film.html"><img src="images/film1.jpg" alt="Affiche de cinema"/></a></p>
+                            <p class="alignement1">Séance à 18h</p></div>
+                            <div class="affiche_film"><p class="alignement"><a href="#"><img src="images/film2.jpg" alt="Affiche de cinema"/></a></p>
+                            <p class="alignement1">Séance à 19h40</p></div>
+                            <div class="affiche_film"><p class="alignement"><a href="#"><img src="images/film3.jpg" alt="Affiche de cinema"/></a></p>
+                            <p class="alignement1">Séance à 21h10</p></div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p id="copyright">Tous droits réservés - 2017 - Les Films en Plein Air</p>
+        </footer>
+    </body>
+</html>

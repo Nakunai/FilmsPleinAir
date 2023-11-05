@@ -1,0 +1,718 @@
+@font-face
+{
+    font-family: 'OpenSans-Regular';
+    src: url('polices/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'BebasNeue Regular';
+    src: url('polices/BebasNeue Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeue';
+    src: url('polices/HelveticaNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Réglages généraux*/
+
+body
+{
+	background-color: #1B1B1B;
+	font-family: HelveticaNeue;
+	color: white;
+}
+
+nav a, h1, article a
+{
+	font-family: 'BebasNeue Regular';
+	text-transform: uppercase;
+}
+
+h1
+{
+	padding-left: 10px;
+	margin-top: 0;
+	font-size: 1.8em;
+}
+
+p
+{
+	text-align: justify;
+	font-size: 17px;
+	color: #cecece;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+/*Entete*/
+
+header
+{
+	background-color: #121212;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+}
+
+#placement_entete
+{
+	display: flex;
+	margin: auto;
+	width: 74%;
+	justify-content: space-between;
+}
+
+#logo
+{
+	margin-top: 12px;
+	
+}
+
+
+nav
+{
+	margin-right: 6%;
+	margin-top: 14px;
+}
+
+nav ul
+{
+	display: flex;
+	list-style-type: none;
+}
+
+nav li
+{
+	margin-right: 16%;
+}
+
+nav a
+{
+	font-size: 1.7em;
+	color: white;
+}
+
+nav a:hover
+{
+	color: #527cbc;
+}
+
+/*Partie haut*/
+
+.mise_en_page
+{
+	width: 74.2%;
+	margin: auto;
+}
+
+#section_haut
+{
+	margin-top: 120px;
+	background-color: #121212;
+	box-shadow: 2px 3px 6px black;
+}
+
+#banniere_image
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background: url('images/texture.jpg');
+}
+
+#banniere_image img
+{
+	width: 57.2%;
+}
+
+.ico_categorie
+{
+	margin-right: 10px;
+}
+
+#presentation
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	font-size: 1.1em;
+}
+
+/*Section*/
+
+section
+{
+	display: flex;
+	padding-bottom: 40px;
+	background-color: #1B1B1B;
+	justify-content: space-between;
+}
+
+#section_principale
+{
+	width: 65%;
+}
+
+#actu, #bloc_film
+{
+	box-shadow: 2px 3px 6px black;
+	margin-top: 40px;
+	width: 100%;
+}
+
+#titre_actu, #titre_film
+{
+	background-color: #121212;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	border-bottom: 1px solid white;
+	width: 100%;
+
+}
+
+article
+{
+	display: flex;
+	background-color: #121212;
+	padding: 10px;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+article a
+{
+	color: #527cbc;
+	font-size: 1.6em;
+	font-weight: bold;
+	display: block;
+}
+
+article a:hover
+{
+	color: white;
+}
+
+#article_actu
+{
+	flex-direction: column;
+}
+
+.image_article
+{
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.miniature_affiche
+{
+	padding-left: 10px;
+	margin-top: 20px;
+}
+
+.position_article
+{
+
+	flex-direction: column;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+#zone_formulaire
+{
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+
+#preinscription
+{
+	width: 420px;
+	box-shadow: 2px 3px 6px black;
+	font-family: OpenSans-Regular;
+	background-color: #121212;
+	height: 360px;
+	padding-bottom: 20px;
+}
+
+#titre_preinscription
+{
+	padding-left: 10px;
+	padding-top: 6px;
+	background-color: #527cbc;
+	padding-bottom: 6px;
+	color: black;
+}
+
+form
+{
+	margin-top: 28px;
+	padding-bottom: 20px;
+}
+
+#preinscription label
+{
+	width: 100px;
+	display: block;
+	float: left;
+	margin-left: 10px;	
+	font-size: 0.9em;
+}
+
+input, select
+{
+	margin-bottom: 20px;
+}
+
+#envoi_formulaire
+{
+	margin-left: 110px;
+	background-color: #527cbc;
+	border: 1px solid black;
+	height: 33px;
+	width: 110px;
+	color: #121212;
+	text-transform: uppercase;
+}
+
+#contact
+{
+	width: 420px;
+	box-shadow: 2px 3px 6px black;
+	font-family: OpenSans-Regular;
+	background-color: #121212;
+	height: 530px;
+	padding-bottom: 30px;
+}
+
+#titre_contact
+{
+	background-color: #527cbc;
+	color: black;
+	padding-left: 20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-bottom: 0px;
+}
+
+#contact p
+{
+	font-size: 0.8em;
+	padding: 10px;
+	border-bottom: 1px dotted white;
+	border-top: 1px dotted white;
+}
+
+#contact label
+{
+	width: 100px;
+	display: block;
+	float: left;
+	margin-left: 10px;	
+	font-size: 0.9em;
+}
+
+#contact form, #preinscription form
+{
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+#contact_message
+{
+	height: 100px;
+	width: 66%;
+}
+
+#contact_envoi
+{
+	margin-left: 110px;
+	background-color: #527cbc;
+	border: 1px solid black;
+	height: 33px;
+	width: 110px;
+	color: #121212;
+	text-transform: uppercase;
+	margin-top: 18px;
+}
+
+#partie_droite
+{
+	display: flex;
+	flex-direction: column;
+	width: 26%;
+}
+
+aside
+{
+	width: 100%;
+	height: 1180px;
+	background-color: #121212;
+	padding-bottom: 20px;
+	box-shadow: 2px 3px 6px black;
+	margin-top: 40px;
+}
+
+#titre_aside
+{
+	
+	padding-left: 20%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid white;
+	font-weight: normal;
+	background-color: #121212;
+}
+
+.alignement
+{
+	text-align: center;
+	color:white;
+}
+
+.alignement1
+{
+	text-align: center;
+	color:white;
+	border-bottom: 1px solid white;
+	margin-bottom: 30px;
+}
+
+#carte
+{
+	margin-top: 30px;
+}
+
+/*Footer*/
+
+footer
+{
+	background-color: #121212;
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+
+}
+
+#copyright
+{
+	text-align: center;
+}
+
+
+/*Page des films*/
+
+#films
+{
+	margin-top: 130px;
+	margin-bottom: 50px;
+	background-color: #121212;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	box-shadow: 2px 3px 6px black;
+}
+
+.conteneur_films
+{
+	display: flex;
+	margin-bottom: 20px;
+	border-bottom: 1px solid white;
+	padding-bottom: 20px;
+
+}
+
+.conteneur1, .conteneur2
+{
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+
+.conteneur1 img, .conteneur2 img
+{
+	box-shadow: 2px 3px 6px black;
+}
+
+
+strong
+{
+	color: #527cbc;
+}
+
+em
+{
+	font-size: 1.4em;
+}
+
+/*Media Queries*/
+
+@media all and (max-width: 1800px)
+{
+	#zone_formulaire
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#preinscription
+	{
+		margin-bottom: 30px;
+	}
+}
+
+@media all and (max-width: 1400px)
+{
+	section
+	{
+		flex-direction: column;
+	}
+
+	#section_principale
+	{
+		width: 100%;
+	}
+
+	#zone_formulaire
+	{
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	#titre_aside
+	{
+		padding-left: 39.5%;
+	}
+
+	aside
+	{
+		height: 460px;
+	}
+
+	#bloc_affiche
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#partie_droite
+	{
+		width: 100%;
+	}
+
+	.conteneur_films
+	{
+		flex-direction: column;
+	}
+
+	.conteneur1
+	{
+		width: 100%;
+		border-bottom: 1px solid white;
+		padding-bottom: 20px; 
+	}
+	.conteneur2
+	{
+		padding-top: 20px;
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 1170px)
+{
+	#zone_formulaire
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media all and (max-width: 1070px)
+{
+	#partie_droite
+	{
+		width: 100%;
+	}
+
+	#bloc_affiche
+	{
+		flex-direction: column;
+	}
+
+	aside
+	{
+		height: 1220px;
+	}
+
+	#titre_aside
+	{
+		padding-left: 35%;
+	}
+}
+
+@media all and (max-width: 840px)
+{
+	
+	#placement_entete
+	{
+		flex-direction: column;
+	}
+
+	header
+	{
+		height: 130px;
+	}
+
+	#logo
+	{
+		padding-left: 8%;
+	}
+
+	nav
+	{
+		margin-top: 0;
+	}
+
+	#section_haut
+	{
+		margin-top: 160px;
+		padding-top: 10px;
+	}
+
+	#banniere_image
+	{
+		display: none;
+	}
+
+	article
+	{
+		flex-direction: column;
+	}
+
+	article a
+	{
+		text-align: center;
+	}
+
+	.miniature_affiche
+	{
+		text-align: center;
+	}
+
+	#films
+	{
+		width: 100%;
+		margin-top: 150px;
+	}
+
+	.conteneur1, .conteneur2
+	{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.conteneur1 img, .conteneur2 img
+	{
+		margin-bottom: 20px;
+		
+	}
+}
+
+@media all and (max-width: 480px)
+{
+	#placement_entete
+	{
+		margin-left: 0;
+	}
+
+	header
+	{
+		height: 100px;
+	}
+
+	#logo img
+	{
+		width: 240px;
+	}
+
+	nav a
+	{
+		font-size: 1.2em;
+	}
+
+	#presentation, article p
+	{
+		font-size: 1em;
+	}
+
+	.affiche_film img, #reduction_affiche img
+	{
+		
+		width: 80%;
+	}
+
+	#preinscription, #contact
+	{
+		width: 100%;
+		height: auto;
+	}
+
+	#preinscription form
+	{
+		padding-left: 10px;
+	}
+
+	#contact_message
+	{
+		width: 170px;
+	}
+
+	#envoi_formulaire, #contact_envoi
+	{
+		margin-left: 16%;
+	}
+
+	#partie_droite
+	{
+		width: 100%;
+	}
+
+	aside
+	{
+		height: auto;
+	}
+
+	#titre_aside
+	{
+		padding-left: 40px;
+	}
+
+	#films
+	{
+		margin-top: 120px;
+	}
+
+	.conteneur1 img, .conteneur2 img
+	{
+		width: 70%;
+		min-width: 140px;
+	}
+}
