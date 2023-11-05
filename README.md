@@ -19,4 +19,4 @@ Clone project
   git clone https://github.com/Nakunai/FilmsPleinAir.git
 ```
 
-Open **index.html**. You can open Cahier_des_charges too for view specs.
+Open **index.html**. You can open **Cahier_des_charges.pdf** too for view specs.
